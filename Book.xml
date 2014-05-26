@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.3//EN"
+                 "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd" [
+<!ENTITY % sharedents SYSTEM "shared-entities.xml" >
+%sharedents;
+]>
+<book id="vmcasterBook" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <title>vmcaster</title>
+  <subtitle>2014-01-21</subtitle>
+  <titleabbrev>vmcaster</titleabbrev>
+
+  <bookinfo>
+    <abstract>
+      <para>Virtual Maschine Image list Format as developed by the HVG as an on going document.</para>
+    </abstract>
+
+    <date>2012-05-17</date>
+    <author>
+      <firstname>Virtualisation Working Group Format</firstname>
+      <surname>HEPiX</surname>
+    </author>
+    <author>
+      <firstname>Owen</firstname>
+      <surname>Synge</surname>
+    </author>
+  </bookinfo>
+
+  <preface id="preface">
+    <title>Preface</title>
+
+    <para>&vmil; are a extendible meta data format used to transfer &vmi; from end 
+    user to cloud resource provider. &vmil; within a working group of &hepix;.
+    &hepix; is a twice yearly conference made up from sites providing compute and 
+    storage services for &hep;. &hepix; focusses on the compute, network and storage 
+    infrastucture required for &hep; sites.
+    </para>
+    <section id="observations">
+      <title>&vwg; Observations</title>
+      <para>
+        The spring 2009 &hepix; conference made the following observations:
+        <itemizedlist>
+          <listitem>&hep; will want consistent images across sites.</listitem>
+          <listitem>The Grid is a homogeneous OS environment so requiring &hep; to coordinate OS upgrades across multiple experiments.</listitem>
+          <listitem>The Grid will need to be shared with non &hep; community.</listitem>
+          <listitem>&hep; experiments are very coupled to OS.</listitem>
+          <listitem>Hardware is coupled to OS version.</listitem>          
+          <listitem>Sites believe &vmi;'s are going to be the execution environment for &hep; jobs in the future.</listitem>
+          <listitem>&chroot;, and &xen; based &vee; where already present at &hepix; sites.</listitem>  
+        </itemizedlist>
+        With these observations the &vwg; was formed.
+      </para>
+      <para>
+        A new generation of &vee; such as &openstack;, &opennebula; and &nimbus; where already being developed.
+      </para>
+    </section>
+    <section id="objectives">
+      <title>&vwg; Objectives</title>
+      <para>
+        <itemizedlist>
+          <listitem>Produce a framework to securely run &vmi;'s across multiple sites supporting &hep;.</listitem>
+          <listitem>Sites need control over &vmi; selection.</listitem>
+        </itemizedlist>
+      </para>
+      <para>
+        With these objectives the &vwg; was created with Tony Cass as its leader.
+      </para>
+    </section>
+  </preface>
+  <toc/>
+  <xi:include href="imagetransfer-software-subscriber.xml"/>
+</book>
+
