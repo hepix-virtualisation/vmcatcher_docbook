@@ -4,11 +4,11 @@
 <!ENTITY % sharedents SYSTEM "shared-entities.xml" >
 %sharedents;
 ]>
-<book id="vmcasterBook" xmlns:xi="http://www.w3.org/2001/XInclude">
+<book id="vmcatcherBook" xmlns:xi="http://www.w3.org/2001/XInclude">
 
-  <title>vmcaster</title>
+  <title>vmcatcher</title>
   <subtitle>2014-01-21</subtitle>
-  <titleabbrev>vmcaster</titleabbrev>
+  <titleabbrev>vmcatcher</titleabbrev>
 
   <bookinfo>
     <abstract>
